@@ -17,6 +17,10 @@ Route::get('/', function () {
     return \Inertia\Inertia::render('Index');
 });
 
+Route::get('/dashboard', function () {
+    return \Inertia\Inertia::render('New/Dashboard');
+});
+
 Route::get('/register', function () {
     return \Inertia\Inertia::render('New/Register');
 });
